@@ -1,6 +1,6 @@
 <template>
 <div class="contact">
-	<p>Coming soon.</p>
+	<p>partytuuriorchestra@gmail.com</p>
 </div>
 </template>
 
@@ -8,4 +8,7 @@
 </script>
 
 <style lang="css">
+.contact {
+	text-align: center;
+}
 </style>

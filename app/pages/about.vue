@@ -1,7 +1,7 @@
 <template>
 <div class="about-layout">
 	<div class="about">
-			<p class="bigger-text">A SHARED EXPERIENCE ABOUT BREAKING THE RULES SERVING YOU MUSIC IN UNTRADITIONAL WAYS. </p>
+			<p class="bigger-text">A SHARED EXPERIENCE ABOUT BREAKING THE RULES SERVING YOU MUSIC IN UNTRADITIONAL WAYS.</p>
   			<div class="p-separator"></div>
   			<div class="p-separator"></div>
 			<p>It all began when our group of friends consisting of young musicians got frustrated in the stiff etiquette in the classical music world. Realizing the lack of interest and the loss of livelyhood in our promised future audience sparked the urge and excitement in us to take action: to break out of the traditions that were slowing us down and creating the alternative.</p>
@@ -22,6 +22,16 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+	title: 'About',
+	meta: [
+		{ name: 'description', content: 'About Partytuuri Orchestra' }
+	],
+})
+
+useHead({
+	meta: [{ property: 'og:title', content: `About Partytuuri Orchestra` }]
+})
 </script>
 
 <style lang="css">

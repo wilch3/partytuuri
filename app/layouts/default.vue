@@ -13,9 +13,9 @@
 					<NuxtLink to="/contact">Contact</NuxtLink>
 				</li>
 				<!-- <li class="menu-item">Upcoming events</li> -->
-				<li class="menu-item">
+				<!-- <li class="menu-item">
 					<NuxtLink to="/discography">Discography</NuxtLink>
-				</li>
+				</li> -->
 			</div>
 		</ul>
 	</div>
@@ -44,11 +44,27 @@
 
 <script setup>
 const currentYear = new Date().getFullYear();
+
+useHead({
+	titleTemplate: (title) => {
+		return title ? `${title} | Partytuuri Orchestra` : 'Partytuuri Orchestra';
+	}
+})
+
+useSeoMeta({
+	ogTitle: 'Partytuuri Orchestra',
+	description: 'Partytuuri Orchestra - A SHARED EXPERIENCE ABOUT BREAKING THE RULES SERVING YOU MUSIC IN UNTRADITIONAL WAYS.',
+	ogDescription: 'Partytuuri Orchestra - A SHARED EXPERIENCE ABOUT BREAKING THE RULES SERVING YOU MUSIC IN UNTRADITIONAL WAYS.'
+})
 </script>
 
 <style lang="css">
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
 html, body {
 	background: black;
+	min-width: fit-content;
+	font-family: "Inconsolata", monospace;
 }
 
 .menu {
@@ -61,7 +77,7 @@ a {
 }
 
 .container {
-	/* min-height: 100vh;     */
+	min-height: 70vh;    
     display: flex;
     flex-direction: column;
 	margin-top: 150px;

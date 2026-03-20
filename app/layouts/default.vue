@@ -63,6 +63,7 @@ useSeoMeta({
 
 html, body {
 	background: black;
+	color: white;
 	min-width: fit-content;
 	font-family: "Inconsolata", monospace;
 }

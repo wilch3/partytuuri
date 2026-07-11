@@ -11,11 +11,21 @@
 			<div class="p-separator"></div>
 			<p class="bigger-text">WE FIND IT ACCEPTABLE TO PARTY TO VIVALDI.</p>
 	</div>
-	<div class="upcoming">
-		<h4 class="upcoming-events">upcoming events</h4>
-		<div v-for="i in 1" class="event-item">
-			<p class="name">PARTYTUURI ORCHESTRA</p>
-			<p class="date">15.4.2026 <span>&#x2022;</span> Musiikkitalo (Black Box)</p>
+	<div class="events-block">
+		<div>
+			<h4 class="upcoming-events">upcoming events</h4>
+			<div v-for="i in 1" class="event-item">
+				<p class="name">Partytuuri Orchestra x Helsingin Oopperakesä</p>
+				<p class="date">28.8.2026 20:30–22:00<span>&#x2022;</span> Teurastamon Piha</p>
+				<a class="event-link" href="https://teurastamo.com/tapahtumat/partytuuri-orchestra-x-helsingin-oopperakesa/" target="_blank"><i>event page</i></a>
+			</div>
+		</div>
+		<div>
+			<h4 class="past-events">past events</h4>
+			<div v-for="i in 1" class="event-item">
+				<p class="name">PARTYTUURI ORCHESTRA</p>
+				<p class="date">15.4.2026 <span>&#x2022;</span> Musiikkitalo (Black Box)</p>
+			</div>
 		</div>
 	</div>
 </div>
@@ -60,20 +70,38 @@ useHead({
 		font-size: 14px !important;
 	}
 }
-.upcoming {
+.events-block {
 	text-align: right;
+	gap: 48px;
+	display: flex;
+	flex-direction: column;
+}
+.event-link {
+	text-transform: lowercase;
+	font-size: 10px;
 }
 .event-item {
 	margin-bottom: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.name {
+	font-size: 20px;
 }
 .upcoming-events {
-	font-size: 10px;
-	text-transform: uppercase;
-	margin-bottom: 16px;
+	color: #a5efdb;
+}
+.past-events {
 	opacity: 50%;
 }
+.upcoming-events, .past-events {
+	font-size: 10px;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
 .date {
-	font-size: 12px;
+	font-size: 14px;
 	opacity: 80%;
 }
 </style>

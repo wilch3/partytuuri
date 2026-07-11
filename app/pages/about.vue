@@ -62,7 +62,7 @@ useHead({
 	.about-layout {
 		grid-template-columns: 1fr;
 	}
-	.upcoming {
+	.events-block {
 		margin-top: 60px !important;
 		text-align: left !important;
 	}
